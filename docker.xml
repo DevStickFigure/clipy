@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<folders>
+	<folder>
+		<title>docker</title>
+		<snippets>
+			<snippet>
+				<title>image run</title>
+				<content>docker run -it</content>
+			</snippet>
+			<snippet>
+				<title>image run -d</title>
+				<content>docker run --name $name -d -p $hPort:$cPort $image</content>
+			</snippet>
+			<snippet>
+				<title>imagerun -d -v</title>
+				<content>docker run --name $name -d -v hDirectory:cDirectory:ro -p $hostport:$containerport $image</content>
+			</snippet>
+			<snippet>
+				<title>image run link</title>
+				<content>docker run --link cname:linkcname</content>
+			</snippet>
+			<snippet>
+				<title>images</title>
+				<content>docker images</content>
+			</snippet>
+			<snippet>
+				<title>image history</title>
+				<content>docker history </content>
+			</snippet>
+			<snippet>
+				<title>image detail</title>
+				<content>docker inspect </content>
+			</snippet>
+			<snippet>
+				<title>image delete</title>
+				<content>docker rmi </content>
+			</snippet>
+			<snippet>
+				<title>image -f delete</title>
+				<content>docker rmi -f </content>
+			</snippet>
+			<snippet>
+				<title>image pull</title>
+				<content>docker pull </content>
+			</snippet>
+			<snippet>
+				<title>image build</title>
+				<content>docker build -t $tagname .</content>
+			</snippet>
+			<snippet>
+				<title>image build -no</title>
+				<content>docker build  --no-cache -t $tagname .</content>
+			</snippet>
+			<snippet>
+				<title>Dockerfile</title>
+				<content>FROM
+
+RUN
+
+CMD</content>
+			</snippet>
+			<snippet>
+				<title>ip default</title>
+				<content>docker-machine ip default</content>
+			</snippet>
+			<snippet>
+				<title>cp h -&gt; c</title>
+				<content>docker cp hpath cname:path</content>
+			</snippet>
+			<snippet>
+				<title>cp c -&gt; h</title>
+				<content>docker cp cname:path hpath</content>
+			</snippet>
+			<snippet>
+				<title>ps -a</title>
+				<content>docker ps -a</content>
+			</snippet>
+			<snippet>
+				<title>inspect </title>
+				<content>docker inspect</content>
+			</snippet>
+			<snippet>
+				<title>con stop</title>
+				<content>con stop </content>
+			</snippet>
+			<snippet>
+				<title>con pause</title>
+				<content>docker pause </content>
+			</snippet>
+			<snippet>
+				<title>con unpause </title>
+				<content>docker unpause </content>
+			</snippet>
+			<snippet>
+				<title>con start</title>
+				<content>docker start </content>
+			</snippet>
+			<snippet>
+				<title>com attach</title>
+				<content>docker attach cname</content>
+			</snippet>
+			<snippet>
+				<title>con exec</title>
+				<content>docker exec -it cname /bin/bash</content>
+			</snippet>
+			<snippet>
+				<title>con commit</title>
+				<content>con commit cname image:tag</content>
+			</snippet>
+		</snippets>
+	</folder>
+	<folder>
+		<title>untitled folder</title>
+		<snippets />
+	</folder>
+</folders>
